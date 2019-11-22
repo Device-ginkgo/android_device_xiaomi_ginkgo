@@ -93,5 +93,9 @@
             </intent-filter>
         </activity>
 
+        <service
+            android:name="org.lineageos.settings.device.fpsinfo.FPSInfoService"
+            android:exported="false">
+        </service>
     </application>
 </manifest>

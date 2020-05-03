@@ -157,6 +157,10 @@ on boot
     chown system system /sys/touchpanel/double_tap
     chmod 0660 /sys/touchpanel/double_tap
 
+    # Allow system to read measured screen FPS
+    chown system graphics /sys/class/drm/card0/sde-crtc-0/measured_fps
+    chmod 0660 /sys/class/drm/card0/sde-crtc-0/measured_fps
+
     # Kernelspace battery saver
     chown system system /sys/module/battery_saver/parameters/enabled
     chmod 0660 /sys/module/battery_saver/parameters/enabled
